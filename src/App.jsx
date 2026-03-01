@@ -1,22 +1,24 @@
-// import { useState } from 'react'
-import './styles/tailwind.css'
+// src/App.jsx
+import AdminHeader from "./components/admin/AdminHeader";
+import AdminSidebar from "./components/admin/AdminSidebar";
+import AdminDashboardContent from "./components/admin/AdminDashboardContent";
+import "./styles/tailwind.css"
 
-function App() {
+export default function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="p-8 bg-white shadow-xl rounded-2xl border border-blue-200">
-        <h1 className="text-3xl font-bold text-blue-600 hover:text-blue-800 cursor-pointer">
-          Tailwind is Working!
-        </h1>
-        <p className="mt-4 text-gray-600">
-          Start building your RMS Frontend.
-        </p>
-        <button className="mt-6 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">
-          Click Me
-        </button>
+    <div className="h-full bg-[var(--rms-neutral-100)] p-4">
+      <div className="h-full flex gap-4">
+        {/* Sidebar */}
+        <AdminSidebar />
+
+        {/* Main column */}
+        <div className="flex-1 flex flex-col gap-4">
+          <AdminHeader />
+          <div className="flex-1">
+            <AdminDashboardContent />
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
-
-export default App

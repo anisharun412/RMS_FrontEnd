@@ -1,2 +1,28 @@
 @import "tailwindcss";
 
+:root {
+  /* Primary */
+  --rms-primary-50: #eef8fb;
+  --rms-primary-100: #d6f0fa;
+  --rms-primary-200: #b3e6f8;
+  --rms-primary-400: #4cc9ee;
+  --rms-primary-500: #22b9e7;
+  --rms-primary-600: #1896bf;
+  --rms-primary-700: #126f8a;
+
+  /* Accent */
+  --rms-accent-500: #ff5f95;
+
+  /* Neutral */
+  --rms-neutral-50: #f9fafb;
+  --rms-neutral-100: #f3f4f6;
+  --rms-neutral-200: #e5e7eb;
+  --rms-neutral-400: #9ca3af;
+  --rms-neutral-500: #6b7280;
+  --rms-neutral-600: #4b5563;
+  --rms-neutral-800: #1f2937;
+  --rms-neutral-900: #0b1220;
+
+  /* Shadow */
+  --rms-soft-shadow: 0 8px 30px rgba(13, 30, 55, 0.08);
+}
